@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<html>
+	<head>
+		<title>PI to the Nth Digit</title>
+		<meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8" />
+		<meta name = "author" content = "Brady Blackley" />
+		<meta name = "keywords" content = "Pi, to the nth digit" />
+		<meta name = "description" content = "Asks the user for a number 
+		between 0-15 and returns Pi accurate to the given amount of deciaml places" />
+		<meta name = "revised" content = "08/06/2019" />
+		
+		<script type="text/javascript">
+			<!-- 
+				function get() {
+					var userInput = document.getElementById("userInput").value;
+					
+					if(userInput < 0){
+					document.getElementById("outputBox").innerHTML = "The given input is too low";
+					}
+					else if(userInput > 15){
+					document.getElementById("outputBox").innerHTML = "The given input is too high";
+					}
+					else if(isNaN(userInput) == true){
+					document.getElementById("outputBox").innerHTML = "The given input is not a number";
+					}
+					else {
+					document.getElementById("outputBox").innerHTML = Math.PI.toFixed(userInput);
+					}
+				}
+			//-->
+		</script>
+		
+		<style>
+		body {
+			background-color: lightblue;
+			border-style: solid;
+			border-radius: 25px;
+			text-align: center;
+			width: 500px;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>&pi; to the Nth Digit</h1>
+		<p>This will return &pi; to the specified decimal place. It cannot go beyond 15 decimal places. Enter the amount of decimal places you want:</p>
+		
+		<textarea id="userInput">0</textarea>
+		<br />
+		<input type="button" onclick="get()" value="Submit"/>
+		<p id = "outputBox"></p>
+	</body>
+</html>
